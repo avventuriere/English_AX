@@ -28,7 +28,7 @@ newTrial("instructions",
     fullscreen(),
     
     newText(`<p>Welcome! In this experiment, you will hear pairs of sounds, separated by a brief interval. </p>
-            <p> Many will sound similar, and many will sounf different.</p>
+            <p> Many will sound similar, and many will sound different.</p>
             <p> Your task is to decide which pairs are the same or different.</p>
             <p> Make your judgment based on whether you think the two sounds would be labeled with the same letter, or if they sound like the same letter to you. </p>
             Press the 'f' button if the sounds are the SAME.</p><p>
