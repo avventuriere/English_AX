@@ -19,7 +19,6 @@ Sequence("instructions","practice",
             randomize("main.trial") ,
             "rest" ,
             randomize("main.trial") ,
-            "rest" ,
             "send" , "end" )
 
 // Welcome page: we do a first calibration here---meanwhile, the resources are preloading
