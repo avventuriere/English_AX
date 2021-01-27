@@ -58,13 +58,13 @@ newTrial("practice",
         .play("once")
         .remove()
         ),
-       newKey("play-same", "J")
+       newKey("play-different", "J")
     .settings.callback(
         getAudio("different")
         .play("once")
         .remove()
         ),
-    newKey("play-different", "N")
+    newKey("play-same", "N")
     .settings.callback(
         getAudio("same")
         .play("once")
