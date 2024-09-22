@@ -71,11 +71,12 @@ newTrial("practice",
         .play("once")
         .remove()
         ),
-    newText(`<p>This practice session will help you get familiar with the task and the sound contrasts.</p>
+    newText(`<div style="display: block; justify-content: space-between; padding: 0 50px;">
+            <p>This practice session will help you get familiar with the task and the sound contrasts.</p>
             <p>Press 'B' to hear a model sound.</p>
             <p>Press 'J' to hear an example of a sound that is different from the model, but would still be labeled with the same letter.</p> 
             <p>Press 'F' to hear an example of a sound that is different from the model and would be labeled with a different letter.</p>
-            <p>When you are ready to begin the experiment, click the button below.</p>`)
+            <p>When you are ready to begin the experiment, click the button below.</p></div>`)
             .css("font-family", "Helvetica, sans-serif")
             .css("font-size", "16px")
             .print("center at 50%", "middle at 50%")
@@ -147,7 +148,8 @@ newTrial("rest",
 
     fullscreen(),
     
-    newText(`<p>Please take a short break.</p>`)
+    newText(`<div style="display: block; justify-content: space-between; padding: 0 50px;">
+            <p>Please take a short break.</p></div>`)
             .css("font-family", "Helvetica, sans-serif")
             .css("font-size", "16px")
             .print("center at 50%", "middle at 50%")
@@ -166,7 +168,8 @@ SendResults("send");
 newTrial("end",
     exitFullscreen()
     ,
-    newText("The is the end of the experiment, you can now close this window. Thank you!")
+    newText(`<div style="display: block; justify-content: space-between; padding: 0 50px;">
+         <p>"The is the end of the experiment, you can now close this window. Thank you!"</p></div>`)
         .css("font-family", "Helvetica, sans-serif")
         .css("font-size", "16px")
         .center()
