@@ -26,20 +26,20 @@ newTrial("instructions",
 
     fullscreen(),
     
-    newText(`<p>Welcome! In this experiment, you will hear pairs of sounds with a brief pause between them.</p>
-            <p>Some pairs will sound very similar, while others will sound different.</p>
-            <p>Your task is to decide whether the two sounds in each pair are the same or different.</p>
-            <p>Make your judgment based on whether you think the two sounds would be labeled with the same letter, or, in other words, if they sound like the same letter to you. </p>
-            <p>Press the 'J' button if the sounds are the SAME.</p>
-            <p>Press the 'F' button if the sounds are DIFFERENT.</p>
+    newText(`<div style="display: block; justify-content: space-between; padding: 0 50px;">
+            <p>Welcome!</p>
+            <p>In this experiment, you will hear pairs of sounds with a brief pause between them. Some pairs will sound very similar, while others will sound different.</p>
+            <p>Your task is to decide whether both sounds in each pair correspond to the same letter or to different letters. Make your judgment based on whether you think the two sounds would be labeled with the same letter, or, in other words, if they sound like the same letter to you. </p>
+            <p>Press the 'J' button if the sounds correspond to the SAME letter.</p>
+            <p>Press the 'F' button if the sounds correspond to DIFFERENT letters.</p>
             <p>Please try to respond as quickly and accurately as possible. If you take longer than 6 seconds to respond, the next sound will play automatically.</p>
-            <p>Before the experiment starts, you will have a chance to practice.</p>
-            <p>Click the button below when you are ready to begin the practice session.</p>`)
+            <p>Before the experiment starts, you will have a chance to practice to get familiar with the task and the sound contrasts.</p>
+            <p>Click the button below when you are ready to begin the practice session.</p></div>`)
             .css("font-family", "Helvetica, sans-serif")
             .css("font-size", "16px")
             .print("center at 50%", "middle at 50%")
     ,
-    newButton("Start the practice")
+    newButton("Start")
         .css("font-family", "Helvetica, sans-serif")
         .css("font-size", "16px")
         .center()
@@ -81,7 +81,7 @@ newTrial("practice",
             .print("center at 50%", "middle at 50%")
 
     ,
-    newButton("Start the experiment")
+    newButton("Start")
         .css("font-family", "Helvetica, sans-serif")
         .css("font-size", "16px")
         .center()
